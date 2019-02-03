@@ -13,21 +13,6 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".MyArduino" android:label="My Arduino"/>
-
-        <activity
-            android:name=".Room" android:label="Room" />
-
-        <activity
-            android:name=".DoorsAndWindows" android:label="Doors And Windows" />
-
-        <activity
-            android:name=".Support" android:label="Support" />
-        <activity
-            android:name=".RoomDetails" android:label="Room Details" />
-
-
-        <activity
             android:name=".MainActivity"
             android:label=""
             android:theme="@style/AppTheme.NoActionBar">
@@ -38,7 +23,23 @@
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
         </activity>
+
+
+        <activity
+            android:name=".MyArduino" android:label="My Arduino"/>
+
+        <activity
+            android:name=".DoorsAndWindows" android:label="Doors And Windows" />
+
+        <activity
+            android:name=".Support" android:label="Support" />
+
+        <provider
+            android:name=".data.RoomProvider"
+            android:authorities="com.example.android.demo2"
+            android:exported="false" />
+
+
     </application>
-
-
 </manifest>
+
